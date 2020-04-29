@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <H2>Welcome to Activity tracker</H2>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Sport</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for act in activity_list %}
+            <tr>
+                <td><a href={% url 'activity:detail' pk=act.id %}>{{ act.sport }}</a></td>
+                <td><a href={% url 'activity:detail' pk=act.id %}>{{ act.description }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

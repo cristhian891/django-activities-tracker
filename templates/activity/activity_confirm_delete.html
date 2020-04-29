@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+    <h1>Delete {{ activity.description }}?</h1>
+    <form class="form-group" method="post">
+        {% csrf_token %}
+        <input class="btn btn-danger" type="submit" value="Delete">
+        <a href="{% url 'activity:list' %}">Cancel</a>
+    </form>
+
+    </div>
+{% endblock %}
+

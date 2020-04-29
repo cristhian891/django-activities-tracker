@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        {% if not form.instance.pk %}
+            <h1>Log activity</h1>
+        {% else %}
+            <h1>Update activity</h1>
+        {% endif %}
+        <form class="form-group" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Enter Record</button>
+        </form>
+    </div>
+{% endblock %}

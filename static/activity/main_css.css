@@ -1,0 +1,30 @@
+.navbar{
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+}
+
+#content{
+    text-align: center;
+    width: 60%;
+    margin: 20px 20% 20px 20%;
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.table{
+    margin: auto;
+}
+
+.nav-link{
+    color: white;
+}
+
+table{
+    margin: auto;
+}
+
